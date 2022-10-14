@@ -1,0 +1,85 @@
+.billing {
+  display: flex;
+  align-items: center;
+  max-width: calc(100vw - 150px);
+  min-height: calc(100vh - 105px);
+  margin: auto;
+  position: relative;
+  background-color: #3c231778;
+  gap: 20px;
+}
+
+.billing label {
+    padding: 0;
+}
+
+.billing input {
+    padding: 10px 5px;
+    /* lf tb */
+}
+
+.billing .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.billing .form-group--horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.billing .form-group--horizontal > div {
+    width: calc(50% - 10px);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.form-group,
+.form-group--horizontal {
+    margin-bottom: 20px;
+}
+
+.billing__address {
+    width: 50%;
+    padding: 20px;
+    min-height: 550px;
+}
+
+.billing__payment {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 550px;
+}
+
+
+.billing__submit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+@media only screen and (max-width: 1060px) {
+    .billing {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .billing__address,
+    .billing__payment {
+        width: calc(100% - 20px);
+        padding: 0;
+    }
+}
+/* .billing__address */
+
+/*
+Notes
+https://via.placeholder.com/350x150
+*/

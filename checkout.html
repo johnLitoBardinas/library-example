@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="Logo">ONLINE-LIBRARY
+        </div>
+
+        <a href="#" class="toggle-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </a>
+      <div class="navbar">
+        <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+          </ul>
+    </div>
+
+    </nav>
+
+    <div class="container">
+      <form action="#" method="POST" class="billing">
+        <div class="billing__address">
+          <h2 class="text-uppercase">Billing address</h2>
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="John Doe" id="first-name" name="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Example@Example.com" id="email" name="email"/>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" placeholder="Room - Street - Locality" id="address" name="address"/>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" placeholder="Naga City"  id="city" name="city"/>
+          </div>
+          <div class="form-group--horizontal">
+            <div>
+              <label for="state">State:</label>
+              <input type="text" placeholder="State"  id="state" name="state"/>
+            </div>
+
+            <div>
+              <label for="zip">Zip Code:</label>
+              <input type="text" name="zip " id="zip">
+            </div>
+          </div>
+        </div>
+
+        <div class="billing__payment">
+          <!-- Billing Info -->
+          <h2 class="text-uppercase">Payment</h2>
+
+          <div>
+            <span>Accepted Cards:</span>
+            <div class="accepted__payments">
+              <!-- <img src="./image/card_img.png" alt="Picture of accepted cards." width="100%" height="100" style="object-fit: none;"> -->
+              <img src="https://via.placeholder.com/350x150" alt="Test" style="object-fit: contain;
+              width: 100%;">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="payment_section">
+              <div>
+                <input type="radio" name="payment-type" id="payment-paypal"/>
+                <label for="payment-paypal">PayPal</label>
+              </div>
+
+              <div>
+                <input type="radio" name="payment-type" id="payment-mastercard"/>
+                <label for="payment-mastercard">Master Card</label>
+              </div>
+
+              <div>
+                <input type="radio" name="payment-type" id="payment-americanexpress"/>
+                <label for="payment-americanexpress">American Express</label>
+              </div>
+
+              <div>
+                <input type="radio" name="payment-type" id="payment-visa"/>
+                <label for="payment-visa"> Visa </label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="billing__submit">
+            <input type="submit" value="Proceed to Checkout" class="btn__submit" />
+            <button class="btn__submit">Cancel</button>
+            <!-- <a href="./index.html" class="btn__submit">Cancel</a> -->
+          </div>
+        </div>
+      </form>
+
+
+    </div>
+
+
+</body>
+</html>
